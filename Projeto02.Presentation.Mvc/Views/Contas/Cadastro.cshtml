@@ -1,0 +1,76 @@
+﻿<h5>Cadastro de Contas</h5>
+<hr />
+
+<div class="card mt-3">
+    <div class="card-body">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label>Nome da conta:</label>
+                <input type="text" id="nome" class="form-control"
+                       placeholder="Digite aqui" />
+            </div>
+            <div class="col-md-3">
+                <label>Valor da conta:</label>
+                <input type="text" id="valor" class="form-control"
+                       placeholder="0.00" />
+            </div>
+            <div class="col-md-3">
+                <label>Tipo da conta:</label>
+                <select class="form-select" id="tipo">
+                    <option value="">Escolha uma opção</option>
+                    <option value="1">Débito</option>
+                    <option value="2">Crédito</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <button id="btn-cadastro" class="btn btn-success">
+                    Cadastrar Conta
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@**Conteúdo para a seção 'scripts'*@
+@section scripts {
+
+    <script src="~/js/jquery-3.6.0.min.js"></script>
+    <script src="~/js/signalr.min.js"></script>
+
+    <script>
+
+        const connection = new signalR
+            .HubConnectionBuilder()
+            .withUrl("/contashub")
+            .build();
+
+        connection.start().catch(
+            e => console.log(e)
+        );
+
+        //evento quando o usuario clicar no botão de cadastro
+        $(document).ready(function () {
+            $("#btn-cadastro").click(function () {
+
+                //capturar os campos
+                var model = {
+                    nome: $("#nome").val(),
+                    valor: parseFloat($("#valor").val()),
+                    tipo: parseInt($("#tipo").val())
+                };
+
+                //enviando uma notificação (mensagem) para o Hub
+                connection.invoke('SendMessage', model);
+
+                $(".form-control").val('');
+                $(".form-select").val('');
+
+                alert('Dados enviados com sucesso!');
+            });
+        });
+
+    </script>
+}
