@@ -4,14 +4,182 @@
     "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Presentation.Mvc\\Projeto02.Presentation.Mvc.csproj": {}
   },
   "projects": {
-    "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Presentation.Mvc\\Projeto02.Presentation.Mvc.csproj": {
+    "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Application\\Projeto02.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Presentation.Mvc\\Projeto02.Presentation.Mvc.csproj",
-        "projectName": "Projeto02.Presentation.Mvc",
-        "projectPath": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Presentation.Mvc\\Projeto02.Presentation.Mvc.csproj",
+        "projectUniqueName": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Application\\Projeto02.Application.csproj",
+        "projectName": "Projeto02.Application",
+        "projectPath": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Application\\Projeto02.Application.csproj",
         "packagesPath": "C:\\Users\\raphael.assis\\.nuget\\packages\\",
-        "outputPath": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Presentation.Mvc\\obj\\",
+        "outputPath": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\raphael.assis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Domain\\Projeto02.Domain.csproj": {
+                "projectPath": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Domain\\Projeto02.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Data.SqlServer\\Projeto02.Data.SqlServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Data.SqlServer\\Projeto02.Data.SqlServer.csproj",
+        "projectName": "Projeto02.Data.SqlServer",
+        "projectPath": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Data.SqlServer\\Projeto02.Data.SqlServer.csproj",
+        "packagesPath": "C:\\Users\\raphael.assis\\.nuget\\packages\\",
+        "outputPath": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Data.SqlServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\raphael.assis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Domain\\Projeto02.Domain.csproj": {
+                "projectPath": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Domain\\Projeto02.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.90, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Domain\\Projeto02.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Domain\\Projeto02.Domain.csproj",
+        "projectName": "Projeto02.Domain",
+        "projectPath": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Domain\\Projeto02.Domain.csproj",
+        "packagesPath": "C:\\Users\\raphael.assis\\.nuget\\packages\\",
+        "outputPath": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages",
@@ -45,7 +213,152 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.IoC\\Projeto02.IoC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.IoC\\Projeto02.IoC.csproj",
+        "projectName": "Projeto02.IoC",
+        "projectPath": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.IoC\\Projeto02.IoC.csproj",
+        "packagesPath": "C:\\Users\\raphael.assis\\.nuget\\packages\\",
+        "outputPath": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.IoC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\raphael.assis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Application\\Projeto02.Application.csproj": {
+                "projectPath": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Application\\Projeto02.Application.csproj"
+              },
+              "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Data.SqlServer\\Projeto02.Data.SqlServer.csproj": {
+                "projectPath": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Data.SqlServer\\Projeto02.Data.SqlServer.csproj"
+              },
+              "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Domain\\Projeto02.Domain.csproj": {
+                "projectPath": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Domain\\Projeto02.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Presentation.Mvc\\Projeto02.Presentation.Mvc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Presentation.Mvc\\Projeto02.Presentation.Mvc.csproj",
+        "projectName": "Projeto02.Presentation.Mvc",
+        "projectPath": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Presentation.Mvc\\Projeto02.Presentation.Mvc.csproj",
+        "packagesPath": "C:\\Users\\raphael.assis\\.nuget\\packages\\",
+        "outputPath": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Presentation.Mvc\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\raphael.assis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Data.SqlServer\\Projeto02.Data.SqlServer.csproj": {
+                "projectPath": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.Data.SqlServer\\Projeto02.Data.SqlServer.csproj"
+              },
+              "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.IoC\\Projeto02.IoC.csproj": {
+                "projectPath": "C:\\Projeto Coti\\Curso Avançado - C#.Net\\Projeto02\\Projeto02.IoC\\Projeto02.IoC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[5.0.8, )"
@@ -77,7 +390,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
         }
       }
     }

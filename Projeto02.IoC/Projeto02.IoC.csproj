@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Projeto02.Application\Projeto02.Application.csproj" />
+    <ProjectReference Include="..\Projeto02.Data.SqlServer\Projeto02.Data.SqlServer.csproj" />
+    <ProjectReference Include="..\Projeto02.Domain\Projeto02.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

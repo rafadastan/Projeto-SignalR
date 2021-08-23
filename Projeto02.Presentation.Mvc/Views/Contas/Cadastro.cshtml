@@ -42,14 +42,17 @@
 
     <script>
 
+        //conectando no HUB..
         const connection = new signalR
             .HubConnectionBuilder()
             .withUrl("/contashub")
             .build();
 
-        connection.start().catch(
-            e => console.log(e)
-        );
+        //iniciando a conexão
+        connection.start()
+            .catch(
+                e => console.log(e)
+            );
 
         //evento quando o usuario clicar no botão de cadastro
         $(document).ready(function () {
@@ -59,7 +62,7 @@
                 var model = {
                     nome: $("#nome").val(),
                     valor: parseFloat($("#valor").val()),
-                    tipo: parseInt($("#tipo").val())
+                    categoria: parseInt($("#tipo").val())
                 };
 
                 //enviando uma notificação (mensagem) para o Hub
@@ -73,4 +76,5 @@
         });
 
     </script>
+
 }
